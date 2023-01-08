@@ -318,7 +318,7 @@ Now run the above command to check added identities or Private keys
 
 #### ssh USER_NAME@IPAddress
 ```ssh USER_NAME@"Private Instance IP Address"```
-- (Once you run this command you will be allowed into the server. That is SSH Agent port fording. It makes use of the locally stored Identity). 
+- (Once you run this command you will be allowed into the server. That is SSH Agent port forwarding. It makes use of the locally stored Identity). 
 
 ### Create an AmazonS3ReadOnlyAccess For Your Web and App Servers
 - Navigate to IAM
@@ -347,7 +347,7 @@ Now run the above command to check added identities or Private keys
         - Expand `Advance details`
             - IAM instance profile: Select `S3-AmazonS3ReadOnlyAccess` IAM Role
             - `NOTE:` Make sure to update the LoadBalancer DNS `BACKEND_LOAD_BALANCER_DNS` in https://github.com/awanmbandi/aws-real-world-projects/blob/three-tier-mailing-app-project/webserver-reverse-proxy-config/000-default.conf `before passing the below User Data`
-            - User data: provide the user data in https://github.com/awanmbandi/aws-real-world-projects/blob/three-tier-mailing-app-project/webserver-reverse-proxy-config/web-automation.sh
+            - User data: provide the user data in https://github.com/Emma-Onye/aws-real-world-projects/blob/three-tier-mailing-app-project/webserver-reverse-proxy-config/web-automation.sh
             - `NOTE:` Update the `webserver-reverse-proxy-config/000-default.conf` on GitHub before passing User Data
 
             - Click on `Create launch template`
